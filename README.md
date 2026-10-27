@@ -25,7 +25,7 @@ BLE 또는 Wi-Fi로 전달하고, HMI의 재생 제어를 앱으로 돌려보냅
 사진 세 장은 모두 차량용 ESP32 프로젝트를 보여줍니다.
 
 외형이 비슷한 **Waveshare RP2350-Touch-LCD-3.49(Pico 계열)** 제품도 있습니다.
-Pico 프로젝트는 버튼을 눌러 사용하는 데크 용도의 별도 저장소로 관리하며,
+Pico용 버튼 데크는 [DeckLink-Pico](https://github.com/hejerd/DeckLink-Pico) 저장소로 별도 관리하며,
 이 저장소에 Pico 소스와 펌웨어를 포함하지 않습니다.
 **구매 제품명과 보드 뒷면 MCU가 ESP32-S3인지 확인한 뒤 사용하세요.**
 RP2350(Pico)와 ESP32-S3의 펌웨어는 호환되지 않습니다.
