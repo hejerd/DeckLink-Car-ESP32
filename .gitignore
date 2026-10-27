@@ -1,0 +1,5 @@
+**/build/
+**/.gradle/
+**/wifi_secret.h
+**/local.properties
+.env
