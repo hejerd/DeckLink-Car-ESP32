@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#101010">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DeckLink"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="..."
+        android:textColor="#CCCCCC"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="-"
+        android:textColor="#8EC5FF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnPerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="알림 접근 권한 열기" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etHost"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="보드 IP (mDNS 자동 탐색 실패 시)"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#777777" />
+
+        <Button
+            android:id="@+id/btnSaveHost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTransport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="전송 방식 전환 (BLE ↔ Wi-Fi)" />
+
+    <Button
+        android:id="@+id/btnBattery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="배터리 최적화 제외 (자동 실행용)" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="서비스 시작" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" android:text="Plex 연동 (선택) · HTTPS 권장"
+        android:textColor="#FFFFFF" android:textSize="18sp" />
+    <EditText android:id="@+id/etPlexServer" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="https://서버:32400"
+        android:inputType="textUri" android:singleLine="true" android:saveEnabled="false"
+        android:textColor="#FFFFFF" android:textColorHint="#999999" />
+    <EditText android:id="@+id/etPlexToken" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Plex 토큰"
+        android:inputType="textPassword" android:singleLine="true" android:saveEnabled="false"
+        android:importantForAutofill="no" android:imeOptions="flagNoPersonalizedLearning"
+        android:textColor="#FFFFFF" android:textColorHint="#999999" />
+    <Button android:id="@+id/btnSavePlex" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="Plex 설정 저장" />
+    <Button android:id="@+id/btnClearPlex" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="Plex 설정 삭제" />
+</LinearLayout>
+
+</ScrollView>
